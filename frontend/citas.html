@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas</title>
+    <link rel="stylesheet" href="css/citas.css">
+
+    <style>
+        /* 🔹 Estilo para el título principal */
+        h2 {
+            font-family: 'Arial Black', sans-serif;
+            color: black; /* ✅ Color negro */
+            text-align: center;
+            font-size: 30px; /* ✅ Título más grande */
+            margin-bottom: 10px;
+        }
+
+        /* 🔹 Contenedor de las tablas */
+        .contenedor-citas {
+            display: flex;
+            justify-content: center; /* ✅ Centra las tablas */
+            align-items: flex-start;
+            width: 90%;
+            margin: 8px auto;
+            gap: 10px; /* ✅ Espacio más angosto entre tablas */
+        }
+
+        /* 🔹 Ajuste del tamaño de las tablas */
+        .tabla-box, .formulario-box {
+            width: 46%; /* ✅ Mantiene las tablas grandes */
+            background: rgba(255, 255, 255, 0.95);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        /* 🔹 Espaciado entre columnas */
+        #tabla-citas th, #tabla-citas td {
+            padding: 6px;
+            text-align: center;
+        }
+
+        /* 🔹 Tamaño de los títulos de tabla */
+        .tabla-box th[colspan], .formulario-box th[colspan] {
+            font-size: 14px;
+            background-color: #004080;
+            color: white;
+            padding: 4px;
+        }
+
+        /* 🔹 Estilos de los inputs y botones */
+        .formulario-box input {
+            width: 95%;
+            padding: 6px;
+            margin: 3px 0;
+            border-radius: 5px;
+            border: 1px solid #004080;
+        }
+
+        .formulario-box button {
+            width: 95%;
+            padding: 6px;
+            background: #004080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 6px;
+        }
+
+        .formulario-box button:hover {
+            background: darkblue;
+        }
+
+        /* 🔹 Responsividad para móviles */
+        @media (max-width: 768px) {
+            .contenedor-citas {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tabla-box, .formulario-box {
+                width: 90%;
+                margin-bottom: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Lista de Citas</h2>
+
+    <div class="contenedor-citas">
+        <!-- 🔹 Tabla de citas a la izquierda -->
+        <div class="tabla-box">
+            <table id="tabla-citas">
+                <thead>
+                    <tr>
+                        <th colspan="6">Citas Registradas</th>
+                    </tr>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Servicio</th>
+                        <th>Tipo</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-citas">
+                    <!-- Se generarán dinámicamente las citas -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 🔹 Formulario de registrar citas a la derecha -->
+        <div class="formulario-box">
+            <form id="form-cita">
+                <table id="tabla-registro">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Registrar Nueva Cita</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label for="nombre-cliente">Nombre Cliente:</label></td>
+                            <td><input type="text" id="nombre-cliente" placeholder="Ingrese nombre" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="servicio">Servicio:</label></td>
+                            <td><input type="text" id="servicio" placeholder="Ingrese servicio" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tipo-servicio">Tipo de Servicio:</label></td>
+                            <td><input type="text" id="tipo-servicio" placeholder="Ingrese tipo" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="fecha">Fecha:</label></td>
+                            <td><input type="date" id="fecha" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="hora">Hora:</label></td>
+                            <td><input type="time" id="hora" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button type="submit">Registrar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/citas.js"></script>
+</body>
+</html>

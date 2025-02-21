@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="css/servicios.css">
+
+</head>
+<body>
+
+    <h1 class="titulo">Lista de Servicios</h1>
+
+    <div class="contenedor-servicios">
+        <!-- 🔹 Servicios Estéticos -->
+        <div class="servicio-box">
+            <img src="img/estetico.png" alt="Servicios Estéticos"width="200">
+            <h2>Servicios Estéticos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Precio</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-esteticos">
+                    <!-- Aquí se llenarán los servicios dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 🔹 Servicios Veterinarios -->
+        <div class="servicio-box">
+            <img src="img/veterinario.png" alt="Servicios Veterinarios" width="200">
+            <h2>Servicios Veterinarios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Precio</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-veterinarios">
+                    <!-- Aquí se llenarán los servicios dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 🔹 Formulario de Registro -->
+    <div class="formulario-container">
+        <h2>Registrar Nuevo Servicio</h2>
+        <form id="form-servicio">
+            <input type="text" id="servicio" placeholder="Servicio" required autocomplete="off">
+            <input type="text" id="tipo" placeholder="Tipo" required autocomplete="off">
+            <input type="number" id="precio" placeholder="Precio" required autocomplete="off">
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+
+    <script src="js/servicios.js"></script>
+</body>
+</html>

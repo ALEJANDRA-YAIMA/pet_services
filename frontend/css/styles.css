@@ -1,0 +1,274 @@
+/* 🔹 AJUSTES GENERALES */
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🔹 ESTILO DE LA PÁGINA PRINCIPAL */
+.titulo-principal {
+    font-size: 42px;
+    font-weight: bold;
+    color: purple; /* 🔹 Color llamativo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Arial Black', sans-serif;
+}
+
+.frase-bienvenida {
+    font-size: 24px; /* 🔹 Letra más grande */
+    font-weight: bold;
+    background: -webkit-linear-gradient(45deg, #86205c, #e077a8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-principal {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* 🔹 CLIENTES */
+.contenedor-clientes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* 🔹 TABLAS DE CLIENTES */
+.tabla-container {
+    width: 38%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    border: 1.5px solid #004080;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #004080;
+    text-align: center;
+    font-size: 13px;
+}
+
+th {
+    background-color: #004080;
+    color: white;
+    font-size: 18px;
+}
+
+/* 🔹 BOTÓN ELIMINAR */
+.btn-eliminar {
+    background: red;
+    color: white;
+    border: none;
+    padding: 3px 7px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-eliminar:hover {
+    background: darkred;
+    transform: scale(1.05);
+}
+
+/* 🔹 FORMULARIO DE REGISTRO */
+.formulario-container {
+    width: 38%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* 🔹 TABLA FORMULARIO */
+#tabla-registro {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    border: 1.5px solid #004080;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#tabla-registro td {
+    padding: 10px;
+    border: 1px solid #004080;
+    text-align: left;
+    background: white;
+}
+
+/* 🔹 INPUT Y BOTÓN REGISTRAR */
+input {
+    width: 95%;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #004080;
+    font-size: 13px;
+}
+
+button {
+    width: 90%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background: #004080;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+/* 🔹 IMAGEN CENTRADA ENTRE LAS DOS TABLAS */
+.imagen-centro {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.imagen-centro img {
+    width: 180px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+/* 🔹 SERVICIOS */
+.contenedor-servicios {
+    display: flex;
+    justify-content: space-between; /* ✅ Separa las tablas */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 30px auto; /* ✅ Centra horizontalmente */
+    padding: 20px;
+}
+
+/* 🔹 ESTILO DE LAS TABLAS DE SERVICIOS */
+.servicio-box {
+    width: 45%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* 🔹 TABLA "REGISTRAR NUEVO SERVICIO" */
+.registro-servicio {
+    width: 50%;
+    margin: 40px auto; /* ✅ Centrado horizontalmente */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* ✅ Asegura que el contenido quede ordenado */
+    align-items: center; /* ✅ Centra los elementos dentro */
+}
+
+/* 🔹 RESPONSIVIDAD PARA PANTALLAS PEQUEÑAS */
+@media (max-width: 768px) {
+    .contenedor-servicios {
+        flex-direction: column; /* ✅ Apila los elementos */
+        align-items: center;
+    }
+
+    .servicio-box {
+        width: 90%; /* ✅ Hace que las tablas ocupen más espacio en móviles */
+        margin-bottom: 20px;
+    }
+
+    .registro-servicio {
+        width: 90%; /* ✅ Asegura que la tabla de registro ocupe más espacio */
+    }
+}
+
+
+/* 🔹 IMAGEN SERVICIOS */
+.imagen-servicio {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto; 
+}
+
+/* 🔹 CITAS */
+.contenedor-citas {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.cita-box {
+    width: 45%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* 🔹 RESPONSIVIDAD */
+@media (max-width: 768px) {
+    .contenedor-clientes,
+    .contenedor-servicios,
+    .contenedor-citas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabla-container,
+    .formulario-container,
+    .servicio-box,
+    .cita-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .imagen-centro img {
+        width: 160px;
+    }
+
+    .imagen-servicio {
+        width: 80px;
+    }
+}

@@ -1,0 +1,125 @@
+/* 🔹 ESTILO GENERAL */
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 🔹 TITULO PRINCIPAL */
+h1 {
+    font-size: 32px;  /* Más grande */
+    font-weight: bold;
+    color: #004080;  /* Color azul oscuro */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 🔹 CONTENEDOR DE SERVICIOS */
+.contenedor-servicios {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 🔹 ESTILOS DE LAS TABLAS DE SERVICIOS */
+.servicio-box {
+    width: 40%; /* Se reduce el tamaño */
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 10px;
+}
+
+/* 🔹 ESTILOS DE LOS TÍTULOS DE SERVICIOS */
+.servicio-box h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #008080; /* Color verde azulado */
+    margin-bottom: 10px;
+}
+
+/* 🔹 IMAGEN DE LOS SERVICIOS */
+.imagen-servicio {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* 🔹 ESTILOS DE LA TABLA "REGISTRAR NUEVO SERVICIO" */
+.registro-servicio {
+    width: 50%;
+    margin: 30px auto; /* Centrado */
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* 🔹 ESTILOS DE LA TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    border: 1.5px solid #004080;
+}
+
+/* 🔹 ESTILOS DE LAS CELDAS */
+th, td {
+    padding: 8px;
+    border: 1px solid #004080;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #004080;
+    color: white;
+}
+
+/* 🔹 BOTONES */
+button {
+    background: #004080;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+/* 🔹 RESPONSIVIDAD */
+@media (max-width: 768px) {
+    .contenedor-servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio-box, .registro-servicio {
+        width: 90%;
+    }
+
+    .imagen-servicio {
+        width: 60px;
+    }
+}

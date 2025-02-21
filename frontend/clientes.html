@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes Registrados</title>
+    <link rel="stylesheet" href="css/clientes.css">
+</head>
+<body id="clientes-page">
+
+    <!-- 🔹 TÍTULO GENERAL -->
+    <h1 class="titulo-principal">Clientes</h1>
+
+
+    <!-- 🔹 Imagen en la parte superior -->
+    <div class="imagen-centro">
+        <img src="img/mascotas.png" alt="Mascotas Felices">
+    </div>
+
+    <!-- 🔹 Contenedor Principal -->
+    <div class="contenedor-clientes">
+        
+        <!-- 🔹 Tabla de clientes registrados -->
+        <div class="tabla-container">
+            <h2>Clientes Registrados</h2>
+            <table id="tabla-clientes">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Mascota</th>
+                        <th>Acciones</th> <!-- ✅ Se mantiene la columna "Acciones" -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se mostrarán los clientes dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 🔹 Formulario de registro de clientes -->
+        <div class="formulario-container">
+            <h2>Registrar Nuevo Cliente</h2>
+            <form id="form-cliente">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="telefono" placeholder="Teléfono" required>
+                <input type="text" id="tipo-mascota" placeholder="Tipo de Mascota" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- 🔹 Script de funcionalidad -->
+    <script src="js/clientes.js"></script>
+
+</body>
+</html>

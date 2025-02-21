@@ -1,0 +1,139 @@
+/* 🔹 AJUSTES GENERALES */
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🔹 TÍTULO PRINCIPAL "CLIENTES" */
+.titulo-principal {
+    font-size: 36px;
+    font-weight: bold;
+    color: #004080;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+/* 🔹 IMAGEN CENTRADA ARRIBA */
+.imagen-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.imagen-centro img {
+    width: 250px; /* 🔹 Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+/* 🔹 CONTENEDOR DE CLIENTES */
+.contenedor-clientes {
+    display: flex;
+    justify-content: space-between; /* 🔹 Mantiene las tablas alineadas */
+    align-items: flex-start;
+    width: 85%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* 🔹 TABLAS CON EL MISMO DISEÑO */
+.tabla-container, .formulario-container {
+    width: 40%; /* Reduce el ancho*/
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 5px; /* Reduce la distancia superior */
+}
+
+/* 🔹 ESTILOS PARA LA TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    border: 1.5px solid #004080;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #004080;
+    text-align: center;
+    font-size: 13px;
+}
+
+th {
+    background-color: #004080;
+    color: white;
+    font-size: 15px;
+}
+
+/* 🔹 BOTÓN ELIMINAR */
+.btn-eliminar {
+    background: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-eliminar:hover {
+    background: darkred;
+    transform: scale(1.05);
+}
+
+/* 🔹 FORMULARIO */
+input {
+    width: 95%;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #004080;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background: #004080;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+/* 🔹 RESPONSIVIDAD PARA PANTALLAS PEQUEÑAS */
+@media (max-width: 768px) {
+    .contenedor-clientes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabla-container, .formulario-container {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .imagen-centro img {
+        width: 130px;
+    }
+}

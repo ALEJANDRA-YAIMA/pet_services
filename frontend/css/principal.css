@@ -1,0 +1,63 @@
+/* 🔹 Estilos Generales */
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🔹 Estilo del Título */
+.titulo {
+    font-size: 42px;
+    font-weight: bold;
+    color: purple; /* 🔹 Color Púrpura */
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Arial Black', sans-serif;
+}
+
+/* 🔹 Estilo de la Frase */
+.frase {
+    font-size: 28px; /* 🔹 Más Grande */
+    color: black; /* 🔹 Negro */
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Estilo de la Imagen */
+.gif-mascotas {
+    width: 430px; /* 🔹 Tamaño más pequeño */
+    height: auto;
+    display: block;
+    margin: 30px auto;
+}
+
+/* 🔹 Estilos de los Botones */
+.menu-botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.menu-botones button {
+    background-color: #007bff; /* 🔹 Azul */
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.menu-botones button:hover {
+    background-color: #e60073; /* 🔹 Blue más oscuro */
+}

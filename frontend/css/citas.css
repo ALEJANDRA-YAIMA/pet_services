@@ -1,0 +1,106 @@
+/* 🔹 ESTILO GENERAL */
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 🔹 TITULO PRINCIPAL */
+h1 {
+    font-size: 42px;  /* ✅ Más grande */
+    font-weight: bold;
+    color: black;  /* ✅ Color negro */
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* 🔹 CONTENEDOR DE CITAS */
+.contenedor-citas {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+    gap: 40px; /* ✅ Separación entre tablas */
+}
+
+/* 🔹 ESTILOS DE LAS TABLAS */
+.cita-box {
+    width: 60%; /* ✅ Más ancha */
+    height: auto; /* ✅ Mantener altura dinámica */
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* 🔹 ESTILOS DE LOS TÍTULOS DE TABLAS */
+.cita-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+/* 🔹 ESTILOS DE LA TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #004080;
+}
+
+/* 🔹 ESTILOS DE LAS CELDAS */
+th, td {
+    padding: 12px;
+    border: 1px solid #004080;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* 🔹 ESTILOS DE LAS CABECERAS */
+th {
+    background-color: #004080;
+    color: white;
+    font-size: 18px;
+}
+
+/* 🔹 BOTONES */
+button {
+    background: #004080;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+/* 🔹 RESPONSIVIDAD */
+@media (max-width: 768px) {
+    .contenedor-citas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cita-box {
+        width: 90%;
+    }
+}
